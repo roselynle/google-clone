@@ -84,6 +84,10 @@ a:hover {
 #search {
     grid-area: search;
     align-self: center;
+    height: 40px;
+    width: 500px;
+    border: 1.5px solid #e4e4e4;
+    border-radius: 50px;
 }
 #search:focus {
     box-shadow: 1px 2px 5px #e4e4e4;
