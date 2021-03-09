@@ -61,3 +61,34 @@ a:hover {
     border-radius: 3px;
     text-decoration: none;
 }
+
+/*Main section*/
+#main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-areas:
+        ". logo ."
+        ". search ."
+        ". flexbox ."
+        ". google-text .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search {
+    grid-area: search;
+    align-self: center;
+}
+#search:focus {
+    box-shadow: 1px 2px 5px #e4e4e4;
+}
+
+#search:hover {
+    box-shadow: 1px 2px 5px #e4e4e4;
+}
