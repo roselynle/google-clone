@@ -3,12 +3,9 @@ document.addEventListener("DOMContentLoaded", getResults);
 function getResults() {
     fetch("http://localhost:5000/pizzaresult")
         .then((r) => r.text())
-        .then((result) =>
-            (document.getElementbyId("result").textContent = result).catch(
-                (error) => {
-                    console.log("Error");
-                }
-            )
+        .then(
+            (result) =>
+                (document.getElementbyId("results").textContent = result)
         );
 }
 
