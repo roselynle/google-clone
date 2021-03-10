@@ -16,9 +16,9 @@
 
 ### app.js
 
--   [x] Created a route for retrieving all 10 search results\
--   [x] Created a route for retrieving a specific search result based on id\
--   [x] Get the server running on port 5000\
+-   [x] Created a route for retrieving all 10 search results
+-   [x] Created a route for retrieving a specific search result based on id
+-   [x] Get the server running on port 5000
 
 ### data.js
 
@@ -26,18 +26,18 @@
 
 ### index.html
 
--   [x] Added navigation bar with links and menu button icon\
+-   [x] Added navigation bar with links and menu button icon
 -   [x] Added Google Logo
--   [x] Added search bar\
--   [x] Added search buttons\
--   [x] Added footer with links\
+-   [x] Added search bar
+-   [x] Added search buttons
+-   [x] Added footer with links
 -   [x] Added a script to generate a random website (from our 10 search results) when I'm feeling lucky is clicked
 
 ### style.css
 
--   [x] Styled nav bar\
--   [x] Styled search bar and buttons\
--   [x] Styled footer\
+-   [x] Styled nav bar
+-   [x] Styled search bar and buttons
+-   [x] Styled footer
 -   [x] Used grids to layout the page
 
 ### homepage.js
@@ -54,7 +54,7 @@
 
 ## Bugs
 
--   [ ] Search results are not generated on the html page when fetching data from local server\
+-   [ ] Search results are not generated on the html page when fetching data from local server
 -   [ ] searchResults.js is incomplete
 
 ## Wins & Challenges
