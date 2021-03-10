@@ -1,11 +1,15 @@
-document.addEventListener("DOMContentLoaded", getResults);
-const section = document.getElementById("results");
-// Getting data from server
+document.addEventListener("click", getResults);
+
 function getResults() {
-    fetch("http://localhost:3000/pizzaresults")
-    .then(((res) => res.json())
-    .then((data) => { section.innerHTML = data.body })
-    );
+    fetch("http://localhost:5000/pizzaresult")
+        .then((r) => r.text())
+        .then((result) =>
+            (document.getElementbyId("but").textContent = result).catch(
+                (error) => {
+                    console.log("Error");
+                }
+            )
+        );
 }
 
 getResults();
