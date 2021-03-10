@@ -1,4 +1,4 @@
-document.addEventListener("click", getResults);
+document.addEventListener("DOMContentLoaded", getResults);
 
 function getResults() {
     fetch("http://localhost:5000/pizzaresult")
