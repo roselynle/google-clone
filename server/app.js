@@ -3,6 +3,7 @@ const app = express();
 app.listen(5000, () => console.log("listening at 5000"));
 
 const cors = require("cors");
+app.use(cors());
 
 app.get("/", (req, res) => res.send("Hello World"));
 
