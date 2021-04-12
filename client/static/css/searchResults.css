@@ -1,0 +1,20 @@
+html,
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    height: 100%;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 14% 58% 28%;
+    grid-template-rows: 75px 30px 1fr 80px;
+    grid-template-areas:
+        "header-icon-left search-bar header-icon-right"
+        "endheaderleft search-options endheaderright"
+        ". search-results ."
+        "footer-left footer-text footer-right";
+}

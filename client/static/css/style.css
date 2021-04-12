@@ -97,6 +97,12 @@ a:hover {
     width: 500px;
     border: 1.5px solid #e4e4e4;
     border-radius: 50px;
+    padding-left: 38px;
+    z-index: 1;
+    margin: auto;
+    font-size: 14px;
+    color: black;
+    -webkit-tap-highlight-color: transparent;
 }
 #search:focus {
     box-shadow: 1px 2px 5px #e4e4e4;
