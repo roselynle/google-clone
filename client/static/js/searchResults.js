@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", getResults);
 
 function getResults() {
-    fetch("http://localhost:5000/pizzaresult")
+    fetch("http://localhost:3000/pizzaresult")
         .then((r) => r.json())
         .then((r) => {
             parseData(r);
