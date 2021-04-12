@@ -1,11 +1,11 @@
-const express = require("express");
+const express = require('express');
+const cors = require('cors');
 const app = express();
-app.listen(5000, () => console.log("listening at 5000"));
-
-const cors = require("cors");
 app.use(cors());
+app.use(express.json());
 
-app.get("/", (req, res) => res.send("Hello World"));
+
+app.get("/", (req, res) => res.send("Welcome to Google Clone"));
 
 // import data
 const pizzaPlacesData = require("./data");
