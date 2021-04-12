@@ -4,11 +4,76 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="static/css/searchResults.css" />
         <script defer src="searchResults.js"></script>
         <title>Search Results</title>
     </head>
     <body>
-        <h1>Search results go here:</h1>
-        <p id="results"></p>
+        <div class="container">
+            <a href="index.html"
+                ><img
+                    alt="Google Logo"
+                    id="logo"
+                    src="static/images/google-logo.png"
+            /></a>
+
+            <form>
+                <input id="search-bar" type="text" />
+            </form>
+
+            <div class="headerright">
+                <a href="https://gsuite.google.com/"
+                    ><img
+                        alt="Menu Icon"
+                        id="menu"
+                        src="static/images/menu-button.jpg"
+                /></a>
+                <div class="sign-in">
+                    <a href="https://accounts.google.com/" id="sign-in"
+                        >Sign in</a
+                    >
+                </div>
+            </div>
+
+            <div class="search-options">
+                <div class="search" id="all">All</div>
+                <div class="search">News</div>
+                <div class="search">Maps</div>
+                <div class="search">Videos</div>
+                <div class="search">Shopping</div>
+                <div class="search">More</div>
+                <div class="search" id="settings">Settings</div>
+                <div class="search">Tools</div>
+            </div>
+            <div class="endheader" id="endheaderleft"></div>
+            <div class="endheader" id="endheaderright"></div>
+
+            <div class="main-area">
+                <p>About 126,000,000 results.</p>
+                <br />
+                <div id="results"></div>
+
+                <div class="related-content1"></div>
+                <div class="related-content2"></div>
+
+                <img
+                    alt="Stretched Google Logo"
+                    id="google-stretch"
+                    src="static/images/long-google.jpeg"
+                />
+            </div>
+
+            <div class="footer" id="footer-left"></div>
+            <div class="footer" id="footer-text">
+                <p>
+                    <strong>United Kingdom</strong> - From your places (Home) -
+                    Use precise location - Learn more
+                </p>
+                <p>
+                    Help &emsp; Send &emsp; feedback &emsp; Privacy &emsp; Terms
+                </p>
+            </div>
+            <div class="footer" id="footer-right"></div>
+        </div>
     </body>
 </html>
