@@ -18,3 +18,142 @@ body {
         ". search-results ."
         "footer-left footer-text footer-right";
 }
+#logo {
+    grid-area: header-icon-left;
+    margin: 8px;
+    margin-left: 20px;
+    transform: scale(0.8);
+    width: 110px;
+}
+#search-bar {
+    grid-area: search-bar;
+    background-image: url(./search-icons.jpg);
+    background-position: 590px 10px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    padding-left: 38px;
+    width: 600px;
+    height: 36px;
+    z-index: 1;
+    margin: auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    font-size: 14px;
+    color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+#search-bar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+#search-bar:focus {
+    outline: none;
+}
+.headerright {
+    grid-area: header-icon-right;
+    justify-self: end;
+    align-self: start;
+}
+#sign-in {
+    grid-area: sign-in;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #4285f4;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#menu {
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+    opacity: 0.75;
+    transform: scale(0.5);
+}
+#menu:hover {
+    opacity: 1;
+}
+.search-options {
+    justify-self: stretch;
+    grid-area: search-options;
+    display: inline-block;
+    border-bottom: 1px solid rgba(97, 97, 97, 0.384);
+}
+.search {
+    display: inline;
+    padding-left: 27px;
+    color: rgb(95, 99, 104);
+}
+#all {
+    padding-left: 0;
+}
+#settings {
+    padding-left: 200px;
+}
+#endheaderleft {
+    grid-area: endheaderleft;
+}
+#endheaderright {
+    grid-area: endheaderright;
+}
+.endheader {
+    border-bottom: 1px solid rgba(97, 97, 97, 0.384);
+}
+.main-area {
+    color: rgb(95, 99, 104);
+    grid-area: search-results;
+}
+h2 {
+    font-size: 20px;
+    color: #1a0dab;
+    font-weight: normal;
+}
+h3 {
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    height: 26px;
+    line-height: 26px;
+}
+.related-content1 {
+    display: inline-block;
+    width: 210px;
+    margin: 0;
+}
+.related-content2 {
+    display: inline-block;
+    margin: 0;
+}
+h5 {
+    color: rgb(26, 13, 171);
+    cursor: pointer;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    margin: 0 5px 5px 0;
+}
+#google-stretch {
+    transform: scale(0.5);
+    margin: 0;
+}
+.footer {
+    background-color: rgb(242, 242, 242);
+    border-top-color: rgb(228, 228, 228);
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+#footer-left {
+    grid-area: footer-left;
+}
+#footer-text {
+    grid-area: footer-text;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 14px;
+}
+#footer-right {
+    grid-area: footer-right;
+}
