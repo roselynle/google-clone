@@ -5,7 +5,7 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatbile" content="ie=edge" />
         <link rel="stylesheet" href="static/css/style.css" />
-        <script defer src='bundle.js'></script>
+        <script defer src="bundle.js"></script>
         <title>Google</title>
     </head>
 
@@ -27,15 +27,10 @@
             <a href="#" id="logo"
                 ><img id="google-logo" src="static/images/google-logo.png"
             /></a>
-            <input type="text" id="search" />
+            <input type="search" id="search" />
             <div id="flexbox">
                 <button id="google-search-btn">Google Search</button
-                ><button
-                    id="feeling-lucky-btn"
-                    a
-                    href="#"
-                    onclick="randomSite();"
-                >
+                ><button id="feeling-lucky-btn" a href="#">
                     I'm Feeling Lucky
                 </button>
             </div>
@@ -49,25 +44,5 @@
             <a href="#" id="terms">Terms</a>
             <a href="#" id="settings">Settings</a>
         </div>
-
-        <!-- script for the I'm feeling lucky button, when the button is clicked it will send to a random website from our search results -->
-        <script>
-            const sites = [
-                "https://www.dominos.co.uk",
-                "https://www.pizzahut.co.uk/",
-                "https://www.papajohns.co.uk/",
-                "https://www.pizzaexpress.com/",
-                "https://www.thefatpizza.co.uk/",
-                "https://www.pizza2night.co.uk/?l=en",
-                "https://www.farmhousepizza.co.uk/",
-                "https://woodandstone-coulsdon.co.uk/",
-                "https://whyteleafepizzaandgrill.com/",
-                "https://topspizza.co.uk/",
-            ];
-            function randomSite() {
-                var i = parseInt(Math.random() * sites.length);
-                location.href = sites[i];
-            }
-        </script>
     </body>
 </html>
