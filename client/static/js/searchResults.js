@@ -1,13 +1,5 @@
 document.addEventListener("DOMContentLoaded", getResults);
-
-function getResults() {
-    fetch("http://localhost:3000/pizzaresult")
-        .then((r) => r.json())
-        .then((r) => {
-            parseData(r);
-        })
-        .catch(console.warn);
-}
+const searchButton = document.getElementById("search");
 
 let parent = document.getElementById("results");
 function parseData(data) {

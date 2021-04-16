@@ -12,5 +12,8 @@
   "devDependencies": {
     "concurrently": "^6.0.1",
     "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
