@@ -2,7 +2,7 @@
 
 Replica of the Google homepage/results page.
 
-This app was created as part of Futureproof's Coding Challenge.
+This app was created as part of Futureproof's Coding Challenge. 
 
 ## Installation & Usage
 
@@ -21,28 +21,32 @@ This app was created as part of Futureproof's Coding Challenge.
 
 ## Technologies
 
--   HTML, CSS and JavaScript
-    -   Dependencies include: Express, Cors, Nodemon
+-   Client side: HTML, CSS and JavaScript
+    -   Dependencies: concurrently, watchify
+-   Server side: Node.js
+    -   Dependencies: cors, express, body-parser, nodemon, axios
 
 ## Task Requirements
 
 -   [x] Your version of Google should have a homepage, with a logo, search bar and two buttons.
-[] Upon pressing one button an API call should be executed and users should be shown a page with ten results.
+-   [ ] Upon pressing one button an API call should be executed and users should be shown a page with ten results.
 -   [x] Upon pressing the other, users should be taken to the page of one of the results.
 
 ## Bugs
 
 -   Webpage is not reponsive and only works on desktop
+-   Search button is still not rendering the search results from the API call
 
 ## Wins & Challenges
 
 ### Wins
 
--   Managed to get the local server running
--   Managed to get all search results when directed to http://localhost:5000/pizzaresult
--   Managed to get a specific search result based on id number when directed to http://localhost:5000/pizzaresult/id
+-   Managed to get the local server up and running
+-   API calls successully retrieves data
+-   Feeling lucky button successfully makes an API call and redirects to a random url based on the user's search keywords
 
 ### Challenges
 
 -   Difficulties rendering data from server onto client side
--   Git flow - trouble working with git collaboraitvely and having error messages. Therefore the commits are coming from one person even though we worked as a team
+-   Trying to get the search button to render 10 results (from the API call) onto a new page
+
