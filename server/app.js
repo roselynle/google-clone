@@ -32,7 +32,7 @@ function selectRandom(data){
     return data[randomIndex]
 }
 
-const access_key = '814b1b36a00558b7fea1a36edf0004a7';
+const access_key = 'b7d52d4bad0849a810f93f69213cb60f';
 app.get('/search/:query', (req, res) => {
     const query = req.params.query;
     const url = `http://api.serpstack.com/search?access_key=${access_key}&type=web&query=${query}`;
