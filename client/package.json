@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"watchify ./static/js/homepage.js ./static/js/feelingLucky.js -o bundle.js\" \"python -m http.server\""
+    "dev": "concurrently \"watchify ./static/js/googleSearch.js ./static/js/feelingLucky.js -o bundle.js\" \"python -m http.server\""
   },
   "keywords": [],
   "author": "",

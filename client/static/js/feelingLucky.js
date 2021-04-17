@@ -6,7 +6,7 @@ function luckyButton() {
           const query = document.getElementById("search").value.trim();
           let url = `http://localhost:3000/lucky/${query}`;
           console.log(url);
-          fetch(url)
+          await fetch(url)
               .then((r) => r.json())
               .then((content) => {
                   window.location.href = content.body.url;
