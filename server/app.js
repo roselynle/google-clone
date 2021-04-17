@@ -21,7 +21,12 @@ app.get("/", (req, res) => res.send("Welcome to Google Clone"));
 //     res.send(pizzaPlacesData[resultId - 1]);
 // });
 
-function randomSearch(data){
+function returnTen(data, length){
+    data.length = length
+    return data.filter(item => item !== 'undefined')
+}
+
+function selectRandom(data){
     length = data.length
     randomIndex = Math.floor(Math.random() * length)
     return data[randomIndex]
@@ -33,7 +38,7 @@ app.get('/search/:query', (req, res) => {
     const url = `http://api.serpstack.com/search?access_key=${access_key}&type=web&query=${query}`;
     axios.get(url)
     .then(function (response) {
-        res.status(200).send({body: (response.data.organic_results, 10)})
+        res.status(200).send({body: returnTen(response.data.organic_results, 10)})
     })
     .catch(console.warn)
 })
@@ -43,7 +48,7 @@ app.get('/lucky/:query', (req, res) => {
     const url = `http://api.serpstack.com/search?access_key=${access_key}&type=web&query=${query}`;
     axios.get(url)
     .then(function (response) {
-        res.status(200).send({body: randomSearch(response.data.organic_results, 10)})
+        res.status(200).send({body: selectRandom(response.data.organic_results, 10)})
     })
     .catch(console.warn)
 })
